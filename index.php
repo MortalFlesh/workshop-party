@@ -33,5 +33,14 @@ $people = [
             }
         ?></li>
     </ul>
+
+    <h2>Příjdou</h2>
+    <ol>
+    <?php
+        foreach ($people as $person) {
+            ?><li><?=$person?></li><?php
+        }
+        ?>
+    </ol>
 </body>
 </html>
