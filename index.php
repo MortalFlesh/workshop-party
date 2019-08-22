@@ -2,6 +2,11 @@
 $organizer = "Petr";
 $place = "Praha";
 $capacity = 33;
+
+$people = [
+    "Jirka",
+    "Ondra",
+];
 ?>
 <!DOCTYPE html>
 <html lang="cs">
