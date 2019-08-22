@@ -4,6 +4,16 @@ $place = "Praha";
 $capacity = 33;
 
 $people = explode("\n", file_get_contents('people.txt'));
+
+if (isset($_GET["pridej"])) {
+    $person = $_GET["pridej"];
+
+    $people[] = $person;
+    file_put_contents(implode("\n", $people));
+
+    header("Location: /");
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="cs">
