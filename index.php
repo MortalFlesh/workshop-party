@@ -10,10 +10,10 @@
     <h1>Party Hard</h1>
 
     <ul>
-        <li>Pořadatel: Foo</li>
+        <li>Pořadatel: <? echo "Petr"?></li>
         <li>Čas: 29.2. 2020</li>
-        <li>Místo: Praha</li>
-        <li>Počet Míst: 33</li>
+        <li>Místo: <?="Praha"?></li>
+        <li>Počet Míst: <?=33?></li>
     </ul>
 </body>
 </html>
