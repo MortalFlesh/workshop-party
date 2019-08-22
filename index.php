@@ -24,7 +24,14 @@ $people = [
         <li>Čas: 29.2. 2020</li>
         <li>Místo: <?=$place?></li>
         <li>Počet Míst: <?=$capacity?></li>
-        <li>Zbývá Míst: <?=$capacity - count($people)?></li>
+        <li>Zbývá Míst: <?php
+            $availableCapacity = $capacity - count($people);
+            if ($availableCapacity <= 0) {
+                echo "Obsazeno";
+            } else {
+                echo $availableCapacity;
+            }
+        ?></li>
     </ul>
 </body>
 </html>
