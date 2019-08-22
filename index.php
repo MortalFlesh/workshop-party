@@ -1,3 +1,8 @@
+<?php
+$organizer = "Petr";
+$place = "Praha";
+$capacity = 33;
+?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -10,10 +15,10 @@
     <h1>Party Hard</h1>
 
     <ul>
-        <li>Pořadatel: <? echo "Petr"?></li>
+        <li>Pořadatel: <?=$organizer?></li>
         <li>Čas: 29.2. 2020</li>
-        <li>Místo: <?="Praha"?></li>
-        <li>Počet Míst: <?=33?></li>
+        <li>Místo: <?=$place?></li>
+        <li>Počet Míst: <?=$capacity?></li>
     </ul>
 </body>
 </html>
