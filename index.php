@@ -24,6 +24,7 @@ $people = [
         <li>Čas: 29.2. 2020</li>
         <li>Místo: <?=$place?></li>
         <li>Počet Míst: <?=$capacity?></li>
+        <li>Zbývá Míst: <?=$capacity - count($people)?></li>
     </ul>
 </body>
 </html>
