@@ -49,5 +49,9 @@ if (isset($_GET["pridej"])) {
         }
         ?>
     </ol>
+    <form action="/">
+        <input type="text" name="pridej" placehoder="Příjde">
+        <input type="submit" value="Přidat">
+    </form>
 </body>
 </html>
