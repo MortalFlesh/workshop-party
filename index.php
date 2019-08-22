@@ -3,10 +3,7 @@ $organizer = "Petr";
 $place = "Praha";
 $capacity = 33;
 
-$people = [
-    "Jirka",
-    "Ondra",
-];
+$people = explode("\n", file_get_contents('people.txt'));
 ?>
 <!DOCTYPE html>
 <html lang="cs">
